@@ -34,4 +34,4 @@ The hypothesis function will be the line we obtain that best fits the given data
 
 ### Computing thetaZero and thetaOne
 
-![alt tag](http://i.imgur.com/67PpwQQ.png)
+![alt tag](http://i.imgur.com/XGyYemD.png)
