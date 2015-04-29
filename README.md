@@ -26,6 +26,12 @@ The x-axis is in minutes, and the y-axis is in millions of dollars. The followin
 ### About Linear Regression
 Linear Regression is used to find a line that best fits any given data set. In this example I use the single variable case, as I was only interested in predicting the **TotalFundingRaised** data point as a function of time. The goal of this method was to find a linear function that would generate output as close as possible to the actual total fundng values.
 
-### Linear Regression in action
+### Parameters, training examples, and The Hypothesis function
 
-![alt tag](http://i.imgur.com/M0sIYnL.png)
+![alt tag](http://i.imgur.com/a1GEb0H.png)
+
+The hypothesis function will be the line we obtain that best fits the given data set. We parameterize the hypothesis function by thetaZero and thetaOne, where thetaZero and thetaOne will be the coefficients that when given any input, the output is as close as possible to the true value. The value *m* is just the number of training examples, or the size of our data set.
+
+### Computing thetaZero and thetaOne
+
+![alt tag](http://i.imgur.com/67PpwQQ.png)
