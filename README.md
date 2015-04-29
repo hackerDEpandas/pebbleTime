@@ -19,7 +19,7 @@ Time (minutes)| Total Funding ($)
 
 ### Plot of Pebble Time data. 
 
-The x-axis is in minutes, and the y-axis is in millions of dollars. The following plot was done on the 17th day of the live Pebble Time project. At about the 24000 minute (or the 17th day) Pebble Time had raised $ 18,235,853.27, which can be seen on the plot. 
+The following plot was done on the 17th day of the live Pebble Time project. At about the 24000 minute (or the 17th day) Pebble Time had raised $ 18,235,853.27, which can be seen on the plot. **NOTE** the x-axis is in minutes, and the y-axis is in millions of dollars.
 
 ![alt tag](http://i.imgur.com/L2vNY6t.png)
 
@@ -32,6 +32,17 @@ Linear Regression is used to find a line that best fits any given data set. In t
 
 The hypothesis function will be the line we obtain that best fits the given data set. We parameterize the hypothesis function by thetaZero and thetaOne, where thetaZero and thetaOne will be the coefficients that when given any input, the output is as close as possible to the true value. The value *m* is just the number of training examples, or the size of our data set.
 
-### Computing thetaZero and thetaOne
+### Computing thetaZero and thetaOne. The learning rate.
 
 ![alt tag](http://i.imgur.com/XGyYemD.png)
+
+For the purposes of this project in particular I intalized thetaZero and thetaOne to zero. From the formulas given for the theta values we can see that thetaZero and thetaOne will update after each iteration. The greek letter alpha is considered the learnig rate or step size. It is important that the learning rate isn't too large otherwise the gradient decent algorithm will blow up. Conversely if the learning rate is too small the algorithm will require a large number of iterations, and thus would be considered an ineffiecent use of time.
+
+### The cost function
+
+![alt tag](http://i.imgur.com/BSAyRse.png)
+
+The purpose of the cost function is to compute the sum of the squared errors. Note the difference in the sumation is actually seeing how far off the particular values of thetaZero and thetaOne are from the true value in any given iteration. Basically if the gradient decent algorithm is working properly the value for the cost function will be constantly decreasing.
+
+### Conclusion
+If you wish to have further information about *Linear Regression* and *Gradient Decent* please see the following [pdf](http://cs229.stanford.edu/notes/cs229-notes1.pdf). I hope you find this readme useful and please let me know if you have any question.
