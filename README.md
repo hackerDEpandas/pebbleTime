@@ -26,4 +26,6 @@ The x-axis is in minutes, and the y-axis is in millions of dollars. The followin
 ### About Linear Regression
 Linear Regression is used to find a line that best fits any given data set. In this example I use the single variable case, as I was only interested in predicting the **TotalFundingRaised** data point as a function of time. The goal of this method was to find a linear function that would generate output as close as possible to the actual total fundng values.
 
-![alt tag](http://imgur.com/huAcDlZ.png)
+### Linear Regression in action
+
+![alt tag](http://i.imgur.com/M0sIYnL.png)
