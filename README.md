@@ -4,7 +4,7 @@
 For this project I used machine learning to try and perdict a final **TotalFundingRaised** for the popular Kickstarter project **Pebble Time**. The *Linear Regression* method, along with the *Gradient Decent* alogrithm, was learnt from Stanfords Machine Learning class taught by Andrew Ng on [Coursera](https://www.coursera.org/course/ml). In specific, the following documantation provides insight on collecting and organizing data to later be ran through the *Linear Regression* method. 
 
 ### Data Source
-My data came from a [service](http://kcaas.io/) that was modified, and can be found [here](http://104.236.89.73:8888/project/pebble?snapshot=3). This service took a snapshot every 30 minutes of multiple data points from the pebble project page, it was up to me to parse through the data set, and retrive only the *TotalFundingRaised* data point. Since I was trying to map the data to a function with respect to time, I wrote a script that made a one to one mapping of a time input to a total funding output.
+My data came from a [service](http://kcaas.io/) that was modified, and can be found [here](http://104.236.89.73:8888/project/pebble?snapshot=3). This service took a snapshot every 30 minutes of multiple data points of the pebble project, it was up to me to parse through the data set, and retrive only the *TotalFundingRaised* data point. Since I was trying to map the data to a function with respect to time, I wrote a script that made a one to one mapping of a time input to a total funding output.
 
 **Example**
 
@@ -17,7 +17,7 @@ Time (minutes)| Total Funding ($)
 .  | .
 
 
-### Plot of Pebble Time data. 
+### Plot of Pebble Time Data. 
 
 The following plot was done on the 17th day of the live Pebble Time project. At about the 24000 minute (or the 17th day) Pebble Time had raised $ 18,235,853.27, which can be seen on the plot. **NOTE** the x-axis is in minutes, and the y-axis is in millions of dollars.
 
@@ -26,13 +26,13 @@ The following plot was done on the 17th day of the live Pebble Time project. At 
 ### About Linear Regression
 Linear Regression is used to find a line that best fits any given data set. In this example I use the single variable case, as I was only interested in predicting the **TotalFundingRaised** data point as a function of time. The goal of this method was to find a linear function that would generate output as close as possible to the actual total fundng values.
 
-### Parameters, training examples, and The Hypothesis function
+### Parameters, Training Examples, and The Hypothesis Function
 
 ![alt tag](http://i.imgur.com/a1GEb0H.png)
 
 The hypothesis function will be the line we obtain that best fits the given data set. We parameterize the hypothesis function by thetaZero and thetaOne, where thetaZero and thetaOne will be the coefficients that when given any input, the output is as close as possible to the true value. The value *m* is just the number of training examples, or the size of our data set.
 
-### The cost function
+### The Cost Function
 
 ![alt tag](http://i.imgur.com/BSAyRse.png)
 
@@ -46,4 +46,4 @@ For the purposes of this project in particular I intalized thetaZero and thetaOn
 
 
 ### Conclusion
-If you wish to have further information about *Linear Regression* and *Gradient Decent* please see the following [pdf](http://cs229.stanford.edu/notes/cs229-notes1.pdf). I hope you find this readme useful and please let me know if you have any question.
+If you wish to have further information about *Linear Regression* and *Gradient Decent* please see the following [pdf](http://cs229.stanford.edu/notes/cs229-notes1.pdf). I hope you find this readme useful and please let me know if you have any questions.
