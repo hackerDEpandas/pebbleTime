@@ -35,7 +35,7 @@ The hypothesis function will be the line we obtain that best fits the given data
 ### Mean Normalizer
 ![alt tag](http://i.imgur.com/itblwaX.png)
 
-When using gradient decent one must be careful that the data is weighted correctly, otherwise the alogrithm will blow up. For this particualr example, when I first ran gradient decent, it didn't work. Since I was dealing with a data set that had #dollars# in the millions, and *minutes* in the few thousands,  the algorithm wasn't running properly. **Mean Normalizer** helps to weight the data set so that gradient decent will work. It simply takes an element in an array subtracts the mean, and divides by the *max* minus the *min* of the array. It does this for every element in the array until the entire array is *Normalized*.
+When using gradient decent one must be careful that the data is weighted correctly, otherwise the alogrithm will blow up. For this particualr example, when I first ran gradient decent, it didn't work. Since I was dealing with a data set that had *dollars* in the millions, and *minutes* in the few thousands,  the algorithm wasn't running properly. **Mean Normalizer** helps to weight the data set so that gradient decent will work. It simply takes an element in an array subtracts the mean, and divides by the *max* minus the *min* of the array. It does this for every element in the array until the entire array is *Normalized*. **Note** When you have obatined the **Hypothesis Fucntion** and start using it to produce output, you must scale back to get the output to make sense.
 
 ### The Cost Function
 
