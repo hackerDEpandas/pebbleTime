@@ -2,6 +2,7 @@ import numpy as np
 
 # loads 1x1478 funding data matrix
 x = np.loadtxt('fundingData.txt', delimiter = ",", unpack = False)
+# indicies where service broke and produced NONE value for the funding data
 arr = [26,27,28,29,990]
 onesArr = []
 timeArr = []
