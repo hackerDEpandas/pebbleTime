@@ -32,6 +32,11 @@ Linear Regression is used to find a line that best fits any given data set. In t
 
 The hypothesis function will be the line we obtain that best fits the given data set. We parameterize the hypothesis function by ![alt tag](http://i.imgur.com/MeSkGMw.png) and ![alt tag](http://i.imgur.com/j5ko1yL.png), where ![alt tag](http://i.imgur.com/MeSkGMw.png) and ![alt tag](http://i.imgur.com/j5ko1yL.png) will be the coefficients that when given any input, the output is as close as possible to the true value. The value *m* is just the number of training examples, or the size of our data set.
 
+### Mean Normalizer
+![alt tag](http://i.imgur.com/itblwaX.png)
+
+When using gradient decent one must be careful that the data is weighted correctly, otherwise the alogrithm will blow up. For this particualr example, when I first ran gradient decent, it didn't work. Since I was dealing with a data set that had #dollars# in the millions, and #minutes# in the few thousands,  the algorithm wasn't running properly. ##Mean Normalizer## helps to weight the data set so that gradient decent will work. It simply takes an element in an array subtracts the mean, and divides by the #max# minus the #min# of that same array. It does this for every element in the array until the entire array is #Normalized#.
+
 ### The Cost Function
 
 ![alt tag](http://i.imgur.com/BSAyRse.png)
