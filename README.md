@@ -24,7 +24,7 @@ The following plot was done on the 17th day of the live Pebble Time project. At 
 ![alt tag](http://i.imgur.com/L2vNY6t.png)
 
 ### About Linear Regression
-Linear Regression is used to find a line that best fits any given data set. In this example I use the single variable case, as I was only interested in predicting the **TotalFundingRaised** data point as a function of time. The goal of this method was to find a linear function that would generate output as close as possible to the actual total fundng values.
+Linear Regression is used to find a line that best fits any given data set. In this example I use the single variable case, as I was only interested in predicting the **TotalFundingRaised** data point as a function of time. The goal of this method was to find a linear function that would generate output as close as possible to the actual total funding values.
 
 ### Parameters, Training Examples, and The Hypothesis Function
 
