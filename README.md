@@ -17,7 +17,7 @@ Time (minutes)| Total Funding ($)
 .  | .
 
 
-### Plot of Pebble Time Data (*scatter.py*). 
+### Plot of Pebble Time Data (*scatter.py*)
 
 The following plot was done on the 17th day of the live Pebble Time project. At about the 24000 minute (or the 17th day) Pebble Time had raised $ 18,235,853.27, which can be seen on the plot. **NOTE** the x-axis is in minutes, and the y-axis is in millions of dollars.
 
@@ -43,7 +43,7 @@ When using gradient decent one must be careful that the data is weighted correct
 
 The purpose of the cost function is to compute the sum of the squared errors. Note the difference in the sumation is actually seeing how far off the particular values of ![alt tag](http://i.imgur.com/MeSkGMw.png) and ![alt tag](http://i.imgur.com/j5ko1yL.png) are from the true value in any given iteration. Basically if the gradient decent algorithm is working properly the value for the cost function will be constantly decreasing.
 
-### Computing ![alt tag](http://i.imgur.com/MeSkGMw.png) and ![alt tag](http://i.imgur.com/j5ko1yL.png). The learning rate.
+### Computing ![alt tag](http://i.imgur.com/MeSkGMw.png) and ![alt tag](http://i.imgur.com/j5ko1yL.png), the learning rate.
 
 ![alt tag](http://i.imgur.com/XGyYemD.png)
 
