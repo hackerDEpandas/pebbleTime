@@ -4,7 +4,7 @@
 For this project I used machine learning to try and predict a final **TotalFundingRaised** for the popular Kickstarter project **Pebble Time**. The *Linear Regression* method, along with the *Gradient Decent* alogrithm, was learnt from Stanfords Machine Learning class taught by Andrew Ng on [Coursera](https://www.coursera.org/course/ml). In specific, the following documentation provides insight on collecting and organizing data to later be ran through the *Linear Regression* method. 
 
 ### Data Source (*getData.py*)
-My data came from a [service](http://kcaas.io/) that was modified, and can be found [here](http://104.236.89.73:8888/project/pebble?snapshot=3). This service took a snapshot every 30 minutes of multiple data points of the [pebble project](https://www.kickstarter.com/projects/597507018/pebble-time-awesome-smartwatch-no-compromises). It was up to me to parse through the data set, and retrive only the *TotalFundingRaised* data point. Since I was trying to map the data to a function with respect to time, I wrote a script (*formatData.py*) that made a one to one mapping of a time input to a total funding output.
+My data came from a [service](http://kcaas.io/) that was modified, and can be found [here](http://104.236.89.73:8888/project/pebble?snapshot=3). This service took a snapshot every 30 minutes of multiple data points of the [pebble project](https://www.kickstarter.com/projects/597507018/pebble-time-awesome-smartwatch-no-compromises). It was up to me to parse through the data set and retrieve only the *TotalFundingRaised* data point. Since I was trying to map the data to a function with respect to time, I wrote a script (*formatData.py*) that made a one to one mapping of a time input to a total funding output.
 
 **Example**
 
@@ -19,12 +19,12 @@ Time (minutes)| Total Funding ($)
 
 ### Plot of Pebble Time Data (*scatter.py*)
 
-The following plot was done on the 17th day of the live Pebble Time project. At about the 24000 minute (or the 17th day) Pebble Time had raised $ 18,235,853.27, which can be seen on the plot. **NOTE** the x-axis is in minutes, and the y-axis is in millions of dollars.
+The following plot was done on the 17th day of the live Pebble Time project. At about the 24,000 minute (or the 17th day) Pebble Time had raised $ 18,235,853.27, which can be seen on the plot. **NOTE** the x-axis is in minutes, and the y-axis is in millions of dollars.
 
 ![alt tag](http://i.imgur.com/L2vNY6t.png)
 
 ### About Linear Regression
-Linear Regression is used to find a line that best fits any given data set. In this example I use the single variable case, as I was only interested in predicting the **TotalFundingRaised** data point as a function of time. The goal of this method was to find a linear function that would generate output as close as possible to the actual total funding values.
+Linear Regression is used to find a line that best fits any given data set. In this example, I use the single variable case, as I was only interested in predicting the **TotalFundingRaised** data point as a function of time. The goal of this method was to find a linear function that would generate output as close as possible to the actual total funding values.
 
 ### Parameters, Training Examples, and The Hypothesis Function
 
@@ -35,7 +35,7 @@ The hypothesis function will be the line we obtain that best fits the given data
 ### Mean Normalizer (*normalizer.py*)
 ![alt tag](http://i.imgur.com/itblwaX.png)
 
-When using gradient decent one must be careful that the data is weighted correctly, otherwise the alogrithm will blow up. For this particualr example, when I first ran gradient decent, it didn't work. Since I was dealing with a data set that had *dollars* in the millions, and *minutes* in the few thousands,  the algorithm wasn't running properly. **Mean Normalizer** helps to weight the data set so that gradient decent will work. It simply takes an element in an array subtracts the mean, and divides by the *max* minus the *min* of the array. It does this for every element in the array until the entire array is *Normalized*. **Note** When you have obatined the **Hypothesis Fucntion** and start using it to produce output, you must scale back to get the output to make sense.
+When using gradient decent one must be careful that the data is weighted correctly, otherwise the alogrithm will blow up. For this particualr example, when I first ran gradient decent, it didn't work. Since I was dealing with a data set that had *dollars* in the millions, and *minutes* in the few thousands,  the algorithm wasn't running properly. **Mean Normalizer** helps to weight the data set so that gradient decent will work. It simply takes an element in an array subtracts the mean of said array, and divides by the *max* minus the *min* of the array. It does this for every element in the array until the entire array is *Normalized*. **Note** When you have obatined the **Hypothesis Fucntion** and start using it to produce output, you must scale back to get the output to make sense.
 
 ### The Cost Function (*gradDec.py*)
 
@@ -51,4 +51,4 @@ For the purposes of this project in particular I intalized ![alt tag](http://i.i
 
 
 ### Conclusion
-Overall this was a good learning experience and by the end of the project I was able to predict a final **TotalFundingRaised** for the project. Even though the prediction was off by a few millions dollars, it was a success. In fact it was expected to be off because we were using a line to predict a non-linear data set. All in all it was cool to see trends, growth rates, etc of an extremely successful live kickstarter project. With further practice I could see this style of real time analysis to be quite crucial for future kickstarter projects. If you wish to have further information about *Linear Regression* and *Gradient Decent* please see the following [pdf](http://cs229.stanford.edu/notes/cs229-notes1.pdf). I hope you find this readme useful and please let me know if you have any questions.
+Overall this was a good learning experience and by the end of the project I was able to predict a final **TotalFundingRaised** for the project. Even though the prediction was off by a few million dollars, it was a success. In fact it was expected to be off because we were using a line to predict a non-linear data set. All in all it was cool to see trends, growth rates, etc of an extremely successful live kickstarter project. With further practice I could see this style of real time analysis to be quite crucial for future kickstarter projects. If you wish to have further information about *Linear Regression* and *Gradient Decent* please see the following [pdf](http://cs229.stanford.edu/notes/cs229-notes1.pdf). I hope you find this readme useful and please let me know if you have any questions.
