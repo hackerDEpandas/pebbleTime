@@ -40,4 +40,4 @@ for i in range(n):
     arrFinal.append([1.0, arrTime[i], arrFunding[i]])
 
 # saves 3x1478 matrix as text file to be ran through gradient decent   
-np.savetxt("normalData2.txt", arrFinal, delimiter = ",")
+np.savetxt("normalData.txt", arrFinal, delimiter = ",")
