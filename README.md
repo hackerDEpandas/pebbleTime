@@ -1,7 +1,7 @@
 # Linear Regression (Machine Learning)  for Pebble Time
 
 ### Introduction
-For this project I used machine learning to try and predict a final **TotalFundingRaised** for the popular Kickstarter project **Pebble Time**. The *Linear Regression* method, along with the *Gradient Descent* alogrithm, was learnt from Stanfords Machine Learning class taught by Andrew Ng on [Coursera](https://www.coursera.org/course/ml). In specific, the following documentation provides insight on collecting and organizing data to later be ran through the *Linear Regression* method. 
+For this project I used machine learning to try and predict a final **TotalFundingRaised** for the popular Kickstarter project **Pebble Time**. The *Linear Regression* method, along with the *Gradient Descent* alogrithm, was learnt from Stanfords Machine Learning class taught by Andrew Ng on [Coursera](https://www.coursera.org/course/ml). In specific, the following documentation provides insight on collecting and organizing data to later be ran through the *Linear Regression* model. 
 
 ### Data Source (*getData.py*)
 My data came from a service that was modified, and can be found [here](http://104.236.89.73:8888/project/pebble?snapshot=3). This service took a snapshot every 30 minutes of multiple data points of the [pebble project](https://www.kickstarter.com/projects/597507018/pebble-time-awesome-smartwatch-no-compromises). It was up to me to parse through the data set and retrieve only the *TotalFundingRaised* data point. Since I was trying to map the data to a function with respect to time, I wrote a script (*formatData.py*) that made a one to one mapping of a time input to a total funding output.
